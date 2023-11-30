@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: shaiya;
+    src: url('font-shaiya/Fonts/footfight.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+:root { 
+--color1:#b8765a02;
+--color2:#cc9d87;
+--color3:#EB7643;
+--color4:#524B49;
+--color5:#332924;
+
+--fontdestaque: 'shaiya', 'sans-serif';
+--fonth2: 'Ephesis', cursive;
+--fontpadrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--color5), var(--color3));
+    font-family: var(--fontpadrao);
+}
+
+main {
+    background-color: var(--color2);
+    margin: auto 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color1), var(--color2));
+    height: 120px;
+    
+}
+
+header h1 {
+    font-family: var(--fontdestaque);
+    font-weight: normal;
+    font-size: 80px;
+    text-align: center;
+}
+
+header p {
+    font-family: var(--fontpadrao);
+    text-align: center;
+    text-shadow: 0px 0px 18px black;
+}
+
+nav {
+    background-color: var(--color5);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--color2);
+    margin: auto 30px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+main h2 {
+    font-family: var(--fonth2);
+    background-image: linear-gradient(to right, var(--color4), var(--color2));
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5%;
+    border-radius: 30em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color5);
+    background-color: var(--color3);
+    padding: 2px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+main p {
+    line-height: 1.5em;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main img {
+    max-width: 100%;
+}
+
+
+nav a:hover {
+    color: var(--color5);
+    font-weight: bold;
+   background-color: var(--color2);
+   padding: 8px;
+   border-radius: 6em;
+}
+
+main a:hover {
+    padding: 5px;
+    border-radius: 5em;
+}
+

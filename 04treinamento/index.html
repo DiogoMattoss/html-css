@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalisados</title>
+    <style>
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: orangered;
+        font-weight: bold;
+      }
+    
+      a:visited {
+        color: gray;
+      }
+
+      a:hover {
+        color: black;
+        text-decoration: underline;
+      }
+
+      .exp:hover {
+        color:green
+      }
+
+      .exp:hover {
+        background-color: rgba(255, 0, 0, 0.596);
+      }
+
+      .exp::before {
+        content: '[Link]';
+        text-decoration: none;
+        color: rgba(255, 145, 0, 0.452)
+     }
+
+     .exp::after {
+        content: '[Link]';
+        text-decoration: none;
+        color: rgba(255, 145, 0, 0.452) ;
+     }
+
+     
+    </style>
+</head>
+<body>
+    <h1>Seletores Personalisados</h1>
+    <ul>
+        <li><a href="https://google.com" target="_blank" rel="external" class="exp">google</a></li>
+        <li><a href="https://youtube.com" target="_blank" rel="external">youtube</a></li>
+        <li><a href="https://twitch.com" target="_blank" rel="external" class="exp">twitch</a></li>
+    </ul>
+</body>
+</html>

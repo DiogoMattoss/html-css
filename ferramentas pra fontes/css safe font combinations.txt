@@ -1,0 +1,1 @@
+Pra compartibilidade de diferentes dispositivos use:css safe font combinations

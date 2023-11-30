@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+    @font-face {
+        font-family: 'cabal';
+        src: url('font-cabal/Cabal_Font.ttf') format('opentype');
+    }
+
+:root {
+        --color1:#6FCC56;
+        --color2:#6b995f;
+        --color3:#62FF37;
+        --color4:#586654;
+        --color5:#2A3328;
+
+        --fontcabal: 'cabal';
+        --fontpadrao: 'Arial, sans-serif'
+ }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--color5);
+    font-family: var(--fontpadrao);
+    
+}
+
+main {
+    background-color: var(--color2);
+    margin: auto 80px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main a {
+    background-color: var(--color1);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+
+main a:hover {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main a:active {
+    color: black;
+}
+
+header {
+    background-image: linear-gradient(to right, var(--color3), var(--color4) );
+    height: 100px;
+    text-align: center;
+}
+
+ header > h1 {
+    font-family: var(--fontcabal);
+    font-weight: normal;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 5px 5px 10px black;
+ }
+
+
+
+ header > p {
+    text-align: center;
+    margin: 6px 58px 20px 20px;
+    text-shadow: 2.5px 2.5px 15px black;
+ }
+
+ nav {
+    margin: 10px;
+    background-color: var(--color5);
+}
+
+nav a {
+    color: var(--color1);
+    text-decoration: none;
+    margin: 20px;
+    font-family: var(--destaqueh1);
+    font-weight: 500;
+    transition-duration: .5s;
+}
+
+
+nav a:hover {
+    color: black;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, var(--color1), var(--color4));
+    padding: 8px;
+    border-radius: 10px;
+}
+
+p {
+    line-height: 2.0;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+main h2 {
+    font-family: var(--fontcabal);
+    font-weight: normal;
+    padding: 10px;
+    background-image: linear-gradient(to top, var(--color5), var(--color3));
+    border-radius: 10px;
+    transition-duration: 1.5s;
+}
+
+
+main img {
+    max-width: 100%;
+    padding: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

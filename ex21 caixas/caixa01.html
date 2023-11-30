@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixas</title>
+    <style> 
+                /* User agent são configurações feitas pelo o navegador */
+        h1 {
+            background-color: cadetblue;
+            height: 300px;
+            width: 300px;
+            
+           /*border-width: 10px;
+            border-style: solid;
+            border-color: blue;*/
+            
+            border:  10px solid blue;
+           
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px; /*OBS: se todos os tamanhos forem os mesmos, não precisa colocar o restante.*/
+
+            /*margin:auto deixa a caixa do elemento no no centro
+            margin-top: 20px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            margin-left: 20px;*/
+
+            margin: 10px auto 10px auto;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;*/
+
+            outline: 5px dashed red;
+        }
+
+        a {
+            /*border-width: 5px;
+            border-style: solid;
+            border-color: goldenrod;*/
+
+            border: 5px solid rgb(75, 218, 32);
+
+           /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px 10px 10px 10px;
+        }
+
+        /*OBS: Para alterar o box-level para inline basta usar o display: inline;
+        da mesma forma pra transformar um inline para bos-level basta usar display: block;*/
+    </style>
+</head>
+<body>
+    
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragráfos também são exemplos de caixa bos-level, <a href="#">mas os links são exemplos de caixa inline-vel</a></p>
+</body>
+</html>
